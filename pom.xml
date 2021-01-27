@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dad.javafx</groupId>
-	<artifactId>IMC</artifactId>
+	<artifactId>HiddenCards</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>IMC</name>
-	<description>Calcula el IMC</description>
+	<name>HiddenCards</name>
+	<description>Juego de cartas ocultas</description>
 	<properties>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
