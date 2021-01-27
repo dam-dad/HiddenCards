@@ -23,7 +23,7 @@
             <Insets bottom="20.0" top="15.0" />
          </VBox.margin>
       </ImageView>
-      <Label text="Dificultad: Dificil">
+      <Label text="Dificultad:  Dificil">
          <VBox.margin>
             <Insets bottom="5.0" />
          </VBox.margin>
