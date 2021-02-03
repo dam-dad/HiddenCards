@@ -7,9 +7,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="root" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-image: url('http://i.stack.imgur.com/kx8MT.gif'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="158.0" fitWidth="310.0">
          <image>
@@ -21,17 +21,17 @@
       </ImageView>
       <HBox alignment="CENTER" prefHeight="12.0" prefWidth="600.0">
          <children>
-            <RadioButton mnemonicParsing="false" prefHeight="64.0" prefWidth="49.0" text="Facil">
+            <RadioButton fx:id="facilRadio" mnemonicParsing="false" prefHeight="64.0" prefWidth="49.0" selected="true" text="Facil" textFill="WHITE">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
                </HBox.margin>
             </RadioButton>
-            <RadioButton mnemonicParsing="false" text="Medio">
+            <RadioButton fx:id="medioRadio" mnemonicParsing="false" text="Medio" textFill="WHITE">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
                </HBox.margin>
             </RadioButton>
-            <RadioButton mnemonicParsing="false" text="Dificil">
+            <RadioButton fx:id="dificilRadio" mnemonicParsing="false" text="Dificil" textFill="WHITE">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </HBox.margin>
@@ -41,10 +41,13 @@
             <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
          </VBox.margin>
       </HBox>
-      <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="297.0" text="Jugar">
+      <Button fx:id="jugarButton" mnemonicParsing="false" prefHeight="89.0" prefWidth="297.0" style="-fx-background-color: #000; -fx-border-color: #999; -fx-border-radius: 20%;" text="Jugar" textFill="WHITE">
          <VBox.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
          </VBox.margin>
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
       </Button>
    </children>
 </VBox>
