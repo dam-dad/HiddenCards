@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="590.0" style="-fx-background-color: black;" stylesheets="@../../../../../CosasCartas/files/Style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mains.MemoryGameMedio">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="590.0" style="-fx-background-color: black;" stylesheets="@../../../../../CosasCartas/files/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mains.MemoryGameMedio">
     <GridPane gridLinesVisible="true" prefHeight="500.0" prefWidth="500.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -45,7 +45,7 @@
             <Font name="Times New Roman Bold" size="18.0" />
         </font>
     </Text>
-    <Button fx:id="finishButt" disable="true" layoutX="506.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#finish" style="-fx-background-color: Black; -fx-border-color: #999; -fx-border-radius: 20%;" text="DONE" textAlignment="CENTER" textFill="WHITE">
+    <Button fx:id="finishButt" disable="true" layoutX="506.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#finish" style="-fx-background-color: Black; -fx-border-color: #999; -fx-border-radius: 20%;" text="FINALIZAR" textAlignment="CENTER" textFill="WHITE">
         <font>
             <Font name="Times New Roman" size="14.0" />
         </font>

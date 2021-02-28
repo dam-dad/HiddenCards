@@ -2,6 +2,7 @@ package mains;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -56,6 +57,13 @@ public class MemoryGameMedio {
     	
     
     	
+     	 Alert alert = new Alert(Alert.AlertType.INFORMATION);
+         alert.setTitle("Bienvenido al modo normal!");
+         alert.setHeaderText(null);
+         alert.setContentText("En esta difucultad tienes 1 min para resolver el panel");
+
+         alert.showAndWait();
+    	
     	
         timeline = new Timer(1000, e -> {
             if (correct == 8) {
@@ -69,7 +77,7 @@ public class MemoryGameMedio {
                 mins++;
             }
             
-            if ( secs == 5) {
+            if ( mins == 1) {
                 
          	   timeline.stop();
               
@@ -94,6 +102,8 @@ public class MemoryGameMedio {
          twoThree.setDisable(true);
          threeThree.setDisable(true);
         
+         
+         JOptionPane.showMessageDialog(null, "Se Acabo el tiempo");
          
          
          }

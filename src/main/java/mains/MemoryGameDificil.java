@@ -2,6 +2,7 @@ package mains;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -56,6 +57,13 @@ public class MemoryGameDificil {
     	
     
     	
+   	 Alert alert = new Alert(Alert.AlertType.INFORMATION);
+     alert.setTitle("Bienvenido al modo dificil!");
+     alert.setHeaderText(null);
+     alert.setContentText("En esta difucultad tienes 30 segundos para resolver el panel");
+
+     alert.showAndWait();
+    	
     	
         timeline = new Timer(1000, e -> {
             if (correct == 8) {
@@ -69,7 +77,7 @@ public class MemoryGameDificil {
                 mins++;
             }
             
-            if ( mins == 1) {
+            if ( secs == 30) {
                 
          	   timeline.stop();
               
@@ -94,7 +102,7 @@ public class MemoryGameDificil {
          twoThree.setDisable(true);
          threeThree.setDisable(true);
         
-         
+         JOptionPane.showMessageDialog(null, "Se Acabo el tiempo");
          
          }
             
