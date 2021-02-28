@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class MemoryGame {
+public class MemoryGameDificil {
 
     public ImageView zeroZero;
     public ImageView oneZero;
@@ -52,7 +52,7 @@ public class MemoryGame {
 
     private static Pix pix;
 
-    public MemoryGame() {
+    public MemoryGameDificil() {
     	
     
     	
@@ -69,7 +69,7 @@ public class MemoryGame {
                 mins++;
             }
             
-            if ( secs == 10) {
+            if ( mins == 1) {
                 
          	   timeline.stop();
               
