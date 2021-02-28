@@ -2,6 +2,8 @@ package main;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,6 +13,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 public class PrincipalController implements Initializable {
 
@@ -64,6 +73,22 @@ public class PrincipalController implements Initializable {
 
 	}
 
+	public void generarPdf() throws JRException, IOException 
+	{
+
+		// compila el informe
+		JasperReport report = JasperCompileManager.compileReport(Main.class.getResourceAsStream("/pdf/puntuaciones.jrxml"));		
+
+		// mapa de parámetros para el informe
+		Map<String, Object> parameters = new HashMap<String, Object>();
+		
+		// generamos el informe (combinamos el informe compilado con los datos) 
+        JasperPrint print  = JasperFillManager.fillReport(report, parameters, new JRBeanCollectionDataSource(PuntuacionProvider.getPuntuaciones()));
+        
+        // exporta el informe a un fichero PDF
+        JasperExportManager.exportReportToPdfFile(print, "puntuaciones.pdf");
+	}
+	
 	public VBox getRoot() {
 		return root;
 	}
