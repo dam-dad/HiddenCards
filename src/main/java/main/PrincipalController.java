@@ -91,21 +91,6 @@ public class PrincipalController implements Initializable {
 //		}
 
 	}
-
-	public void generarPdf() throws JRException, IOException 
-	{
-		// compila el informe
-		JasperReport report = JasperCompileManager.compileReport(Puntuacion.class.getResourceAsStream("/pdf/puntuaciones.jrxml"));	
-
-		// mapa de parámetros para el informe
-		Map<String, Object> parameters = new HashMap<String, Object>();
-		
-		// generamos el informe (combinamos el informe compilado con los datos) 
-        JasperPrint print  = JasperFillManager.fillReport(report, parameters, new JRBeanCollectionDataSource(PuntuacionProvider.getPuntuaciones()));
-        
-        // exporta el informe a un fichero PDF
-        JasperExportManager.exportReportToPdfFile(print, "puntuaciones.pdf");
-	}
 	
 	public VBox getRoot() {
 		return root;

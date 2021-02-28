@@ -326,11 +326,10 @@ public class MemoryGame {
         stage.centerOnScreen();
         stage.setTitle("Fin");
         time = tLabel.getText();
-
+        
         Puntuacion puntuacion = new Puntuacion(getWrong(), time);
         PuntuacionProvider.setPuntuaciones(puntuacion);
-        
-        PrincipalController.generarPdf();
+        PuntuacionProvider.generarPdf();
         
         scene.setRoot(FXMLLoader.load(getClass().getResource("/fxml/Picture.fxml")));
     }

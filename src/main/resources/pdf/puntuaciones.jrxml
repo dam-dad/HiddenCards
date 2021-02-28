@@ -67,7 +67,7 @@
 		<fieldDescription><![CDATA[fallos]]></fieldDescription>
 	</field>
 	<title>
-		<band height="285" splitType="Stretch">
+		<band height="196" splitType="Stretch">
 			<line>
 				<reportElement x="0" y="80" width="556" height="1" uuid="806ce5df-1219-4876-ae0c-ca7405b1f246">
 					<property name="local_mesure_unitheight" value="pixel"/>
@@ -84,58 +84,51 @@
 				<reportElement x="465" y="10" width="84" height="20" uuid="bb10dbe1-0a4f-4722-9953-c163b63cf979"/>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
-			<image hAlign="Center">
-				<reportElement x="0" y="0" width="65" height="60" uuid="94883631-a913-43e2-b182-ab8d77d0181e"/>
-				<imageExpression><![CDATA["logo.png"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="95" y="0" width="210" height="25" uuid="e622555d-198b-4ccd-a4a1-c59c53304058">
 					<property name="local_mesure_unitheight" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font size="19" isBold="true"/>
+					<font fontName="Serif" size="19" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[HiddenCards]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="172" y="50" width="210" height="25" uuid="e7278c80-e52d-4f77-b89a-a518f7cae2d5">
-					<property name="local_mesure_unitheight" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textElement textAlignment="Center">
-					<font size="19" isBold="true"/>
+				<reportElement x="230" y="50" width="100" height="30" uuid="71f730ee-cdbe-4d0a-90c7-d79d1fdb1cd4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="false" isItalic="false"/>
 				</textElement>
 				<text><![CDATA[Puntuaciones]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="81" width="280" height="30" uuid="9a4c1f82-e6b6-46d4-9955-f6ab40987382"/>
+				<reportElement x="0" y="83" width="280" height="30" uuid="6f44f751-69e9-41a6-8eb8-7c8776673a88"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Fallos]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="81" width="276" height="30" uuid="c58d85e2-0787-491f-90cb-11abcd1ba413"/>
+				<reportElement x="280" y="83" width="276" height="30" uuid="71af405e-162b-4555-8322-ae759156b89e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Tiempo]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="0" y="111" width="280" height="30" uuid="120f477a-101d-408b-b387-fb85e6b0df69"/>
+				<reportElement x="0" y="120" width="280" height="30" uuid="e604c21b-c47e-4e26-a322-bdf01713b13d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{fallos}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="111" width="276" height="30" uuid="c04effe6-4e91-46cf-a49c-3f567e51aba5"/>
+				<reportElement x="280" y="120" width="276" height="30" uuid="40ebeb5b-76ac-45cf-8fa0-cf01a08b34d6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{tiempo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
 	<columnHeader>
-		<band height="213"/>
+		<band height="20"/>
 	</columnHeader>
 	<detail>
 		<band height="20"/>
