@@ -16,6 +16,8 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.VBox;
+import mains.Puntuacion;
+import mains.PuntuacionProvider;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -47,8 +49,6 @@ public class PrincipalController implements Initializable {
 	@FXML
 	private RadioButton dificilRadio;
 
-	
-	FacilController facil = new FacilController();
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
@@ -95,7 +95,7 @@ public class PrincipalController implements Initializable {
 	public void generarPdf() throws JRException, IOException 
 	{
 		// compila el informe
-		JasperReport report = JasperCompileManager.compileReport(Main.class.getResourceAsStream("/pdf/puntuaciones.jrxml"));		
+		JasperReport report = JasperCompileManager.compileReport(Puntuacion.class.getResourceAsStream("/pdf/puntuaciones.jrxml"));	
 
 		// mapa de parámetros para el informe
 		Map<String, Object> parameters = new HashMap<String, Object>();

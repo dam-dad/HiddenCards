@@ -9,6 +9,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+import net.sf.jasperreports.engine.JRException;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -122,7 +123,7 @@ public class MemoryGame {
     }
     private ArrayList<ImageView> futureCompare = new ArrayList<>();
     private ArrayList<ImageView> check2 = new ArrayList<>();
-
+    
     public void reveal(MouseEvent m) {
 //        System.out.println("method starts future comparable size "  + futureCompare.size());
 //        System.out.println("method start check2 size " + check2.size());
@@ -280,7 +281,7 @@ public class MemoryGame {
         }
     }
 
-    public void finish() throws IOException {
+    public void finish() throws IOException, JRException {
         timeline.stop();
 //        System.err.println("done");
         Scene scene = zeroZero.getScene();
@@ -290,8 +291,12 @@ public class MemoryGame {
         stage.setTitle("Fin");
         time = tLabel.getText();
 
+        Puntuacion puntuacion = new Puntuacion(getWrong(), time);
+        PuntuacionProvider.setPuntuaciones(puntuacion);
+        
+        PrincipalController.generarPdf();
+        
         scene.setRoot(FXMLLoader.load(getClass().getResource("/fxml/Picture.fxml")));
-
     }
 
 

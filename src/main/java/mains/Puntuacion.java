@@ -2,25 +2,16 @@ package mains;
 
 public class Puntuacion {
 
-	private int aciertos;
 	private int fallos;
 	private String tiempo;
 	
 	public Puntuacion() {
 	}
-
-	public Puntuacion(int aciertos, int fallos) {
+	
+	public Puntuacion(int fallos, String tiempo) {
 		super();
-		this.aciertos = aciertos;
 		this.fallos = fallos;
-	}
-
-	public int getAciertos() {
-		return aciertos;
-	}
-
-	public void setAciertos(int aciertos) {
-		this.aciertos = aciertos;
+		this.tiempo = tiempo;
 	}
 
 	public int getFallos() {

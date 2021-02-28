@@ -63,9 +63,6 @@
 	<field name="tiempo" class="java.lang.String">
 		<fieldDescription><![CDATA[tiempo]]></fieldDescription>
 	</field>
-	<field name="aciertos" class="java.lang.Integer">
-		<fieldDescription><![CDATA[aciertos]]></fieldDescription>
-	</field>
 	<field name="fallos" class="java.lang.Integer">
 		<fieldDescription><![CDATA[fallos]]></fieldDescription>
 	</field>
@@ -112,38 +109,26 @@
 				<text><![CDATA[Puntuaciones]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="90" width="180" height="30" uuid="c20b4b98-855f-4a8f-ac95-f9a1fd83a2e7"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[Aciertos]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="180" y="90" width="200" height="30" uuid="9a4c1f82-e6b6-46d4-9955-f6ab40987382"/>
+				<reportElement x="0" y="81" width="280" height="30" uuid="9a4c1f82-e6b6-46d4-9955-f6ab40987382"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14"/>
 				</textElement>
 				<text><![CDATA[Fallos]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="90" width="176" height="30" uuid="c58d85e2-0787-491f-90cb-11abcd1ba413"/>
+				<reportElement x="280" y="81" width="276" height="30" uuid="c58d85e2-0787-491f-90cb-11abcd1ba413"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14"/>
 				</textElement>
 				<text><![CDATA[Tiempo]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="0" y="120" width="180" height="30" uuid="f92c0d4a-b3bf-4134-ac55-58e1b58c4d6d"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$F{aciertos}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="180" y="120" width="200" height="30" uuid="120f477a-101d-408b-b387-fb85e6b0df69"/>
+				<reportElement x="0" y="111" width="280" height="30" uuid="120f477a-101d-408b-b387-fb85e6b0df69"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{fallos}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="120" width="176" height="30" uuid="c04effe6-4e91-46cf-a49c-3f567e51aba5"/>
+				<reportElement x="280" y="111" width="276" height="30" uuid="c04effe6-4e91-46cf-a49c-3f567e51aba5"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{tiempo}]]></textFieldExpression>
 			</textField>
