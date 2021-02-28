@@ -8,12 +8,17 @@
 	<name>HiddenCards</name>
 	<description>Juego de cartas ocultas</description>
 	<properties>
-		<maven.compiler.target>11</maven.compiler.target>
-		<maven.compiler.source>11</maven.compiler.source>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
-		<exec.mainClass>dad.imc.Main</exec.mainClass>
+		<maven.compiler.target>14</maven.compiler.target>
+		<maven.compiler.source>14</maven.compiler.source>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<exec.mainClass>main.Main</exec.mainClass>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.11.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
