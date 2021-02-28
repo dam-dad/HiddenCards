@@ -1,4 +1,4 @@
-package main;
+package mains;
 
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -34,6 +34,10 @@ public class Picture {
 
     public void playAgain() throws Exception {
 //        System.out.println("play again");
-        new Main().start((Stage)timeTaken.getScene().getWindow());
+     //   new App().start((Stage)timeTaken.getScene().getWindow());
+
+        Stage stage = (Stage) timeTaken.getScene().getWindow();
+        stage.close();
+//        start((Stage)timeTaken.getScene().getWindow());
     }
 }
