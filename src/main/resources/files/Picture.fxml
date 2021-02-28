@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="463.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mains.Picture">
+
+    <GridPane layoutX="3.0" layoutY="7.0" prefHeight="300.0" prefWidth="595.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <ImageView fx:id="zeroZero1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true"/>
+        <ImageView fx:id="oneZero1" fitHeight="150.0" fitWidth="150.0" layoutX="10.0" layoutY="10.0"
+                   pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1"/>
+        <ImageView fx:id="twoZero1" fitHeight="150.0" fitWidth="150.0" layoutX="110.0" layoutY="10.0"
+                   pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2"/>
+        <ImageView fx:id="threeZero1" fitHeight="150.0" fitWidth="150.0" layoutX="210.0" layoutY="10.0"
+                   pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3"/>
+        <ImageView fx:id="zeroOne1" fitHeight="150.0" fitWidth="150.0" layoutX="410.0" layoutY="10.0"
+                   pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1"/>
+        <ImageView fx:id="oneOne1" fitHeight="150.0" fitWidth="150.0" layoutX="10.0" layoutY="110.0"
+                   pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <ImageView fx:id="twoOne1" fitHeight="150.0" fitWidth="150.0" layoutX="110.0" layoutY="110.0"
+                   pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <ImageView fx:id="threeOne1" fitHeight="150.0" fitWidth="150.0" layoutX="210.0" layoutY="110.0"
+                   pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+    </GridPane>
+    <Button layoutX="439.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#playAgain" prefHeight="35.0"
+            prefWidth="124.0" text="Play Again!"/>
+    <Label layoutX="59.0" layoutY="316.0" prefHeight="42.0" prefWidth="165.0" text="Total time"/>
+    <Label fx:id="timeTaken" layoutX="196.0" layoutY="324.0" prefHeight="27.0" prefWidth="39.0" text=":time:"
+           textAlignment="CENTER"/>
+    <Text layoutX="24.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="CONGRATULATIONS, YOU HAVE COMPLETED THE VERY SKILL INTENSIVE MEMORY GAME" wrappingWidth="552.0859375">
+        <font>
+            <Font name="Times New Roman Bold" size="12.0"/>
+        </font>
+    </Text>
+    <Text layoutX="148.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="I REWARD YOUR EFFORTS WITH THIS AMAZING PICTURE">
+        <font>
+            <Font name="Times New Roman Bold Italic" size="12.0"/>
+        </font>
+    </Text>
+    <Label layoutX="24.0" layoutY="350.0" text="Total incorrect matches"/>
+    <Label fx:id="incorrectMatches" layoutX="196.0" layoutY="354.0" text=":wrong:" textAlignment="CENTER"/>
+</AnchorPane>
