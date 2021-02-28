@@ -95,7 +95,6 @@ public class PrincipalController implements Initializable {
 
 	public void generarPdf() throws JRException, IOException 
 	{
-
 		// compila el informe
 		JasperReport report = JasperCompileManager.compileReport(Main.class.getResourceAsStream("/pdf/puntuaciones.jrxml"));		
 
