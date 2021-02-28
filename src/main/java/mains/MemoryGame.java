@@ -81,7 +81,7 @@ public class MemoryGame {
 				mins++;
 			}
 
-			if (secs == 10) {
+			if (mins == 3) {
 
 				timeline.stop();
 

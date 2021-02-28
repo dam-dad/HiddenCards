@@ -35,6 +35,34 @@ public class Picture {
 		threeOne1.setImage(MemoryGame.getPix().getOriginals().get(14));
 		timeTaken.setText(MemoryGame.getTime());
 		incorrectMatches.setText(Integer.toString(MemoryGame.getWrong()));
+		
+		timeTaken.setText(MemoryGameMedio.getTime());
+		zeroZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(0));
+		oneZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(2));
+		twoZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(4));
+		threeZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(6));
+		zeroOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(8));
+		oneOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(10));
+		twoOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(12));
+		threeOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(14));
+		timeTaken.setText(MemoryGameMedio.getTime());
+		incorrectMatches.setText(Integer.toString(MemoryGameMedio.getWrong()));
+		
+		timeTaken.setText(MemoryGameDificil.getTime());
+		zeroZero1.setImage(MemoryGameDificil.getPix().getOriginals().get(0));
+		oneZero1.setImage(MemoryGameDificil.getPix().getOriginals().get(2));
+		twoZero1.setImage(MemoryGameDificil.getPix().getOriginals().get(4));
+		threeZero1.setImage(MemoryGameDificil.getPix().getOriginals().get(6));
+		zeroOne1.setImage(MemoryGameDificil.getPix().getOriginals().get(8));
+		oneOne1.setImage(MemoryGameDificil.getPix().getOriginals().get(10));
+		twoOne1.setImage(MemoryGameDificil.getPix().getOriginals().get(12));
+		threeOne1.setImage(MemoryGameDificil.getPix().getOriginals().get(14));
+		timeTaken.setText(MemoryGameDificil.getTime());
+		incorrectMatches.setText(Integer.toString(MemoryGameDificil.getWrong()));
+		
+		
+		
+	
 	}
 
 	public void playAgain() throws Exception {
