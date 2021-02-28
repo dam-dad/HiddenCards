@@ -24,6 +24,12 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
+/**
+ * Controlador del menu de inicios
+ * 
+ * @author Hidden cards
+ *
+ */
 public class PrincipalController implements Initializable {
 
 	public PrincipalController() throws IOException {
@@ -47,9 +53,8 @@ public class PrincipalController implements Initializable {
 	@FXML
 	private RadioButton dificilRadio;
 
-	
 	@Override
-	
+
 	public void initialize(URL location, ResourceBundle resources) {
 
 		// Grupo para que solo puedas seleccionar un RadioButton
@@ -57,7 +62,7 @@ public class PrincipalController implements Initializable {
 		dificultadGroup.getToggles().addAll(facilRadio, medioRadio, dificilRadio);
 
 	}
-	
+
 	public VBox getRoot() {
 		return root;
 	}
@@ -97,6 +102,5 @@ public class PrincipalController implements Initializable {
 	public void setDificilRadio(RadioButton dificilRadio) {
 		this.dificilRadio = dificilRadio;
 	}
-	
 
 }

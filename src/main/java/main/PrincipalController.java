@@ -26,8 +26,18 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
+/**
+ * controller inicio
+ * 
+ * @author Hidden Cards
+ *
+ */
 public class PrincipalController implements Initializable {
-
+	/**
+	 * Llamada al fxml
+	 * 
+	 * @throws IOException
+	 */
 	public PrincipalController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/InicioView.fxml"));
 		loader.setController(this);
@@ -49,13 +59,16 @@ public class PrincipalController implements Initializable {
 	@FXML
 	private RadioButton dificilRadio;
 
+	/**
+	 * Inicia todo
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
 		// Grupo para que solo puedas seleccionar un RadioButton
 		ToggleGroup dificultadGroup = new ToggleGroup();
 		dificultadGroup.getToggles().addAll(facilRadio, medioRadio, dificilRadio);
-		//acciones de los botones 
+		// acciones de los botones
 		jugarButton.setOnAction(e -> onjugarButton(e));
 	}
 
@@ -67,31 +80,8 @@ public class PrincipalController implements Initializable {
 
 	private void onjugarButton(ActionEvent e) {
 
-//		if (facilRadio.isSelected()) {
-//			try {
-//				FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/CardsFacilView.fxml"));
-//				loader.setController(this);
-//				loader.load();
-//			} catch (IOException e1) {
-//				e1.printStackTrace();
-//			}
-//			System.out.println("facil");
-//
-//		} else if (medioRadio.isSelected()) {
-//			System.out.println("Medio");
-//
-//		} else if (dificilRadio.isSelected()) {
-//			System.out.println("dificil");
-//
-//		}else{
-//			Alert alert = new Alert(AlertType.WARNING);
-//			alert.setHeaderText("Algo ha salido mal");
-//			alert.setContentText("Fallo al iniciar el juego ");
-//			alert.showAndWait();
-//		}
-
 	}
-	
+
 	public VBox getRoot() {
 		return root;
 	}

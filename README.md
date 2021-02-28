@@ -8,9 +8,9 @@ Es un juego sencillo en el que solamente haciendo clic en una carta se da la vue
 
 **Dificultades**
 
-Fácil: Tienes 5 minutos para completar 
+Fácil: Tienes 3 minutos para completar 
 
-Media: Tienes 3 minutos para completar el juego 
+Media: Tienes 1 minuto para completar el juego 
 
-Difícil: Tienes un minuto para completar el juego
+Difícil: Tienes 30 segundos para completar el juego
 
