@@ -57,7 +57,6 @@ public class PrincipalController implements Initializable {
 		dificultadGroup.getToggles().addAll(facilRadio, medioRadio, dificilRadio);
 		//acciones de los botones 
 		jugarButton.setOnAction(e -> onjugarButton(e));
-
 	}
 
 	/**
@@ -147,6 +146,4 @@ public class PrincipalController implements Initializable {
 	public void setDificilRadio(RadioButton dificilRadio) {
 		this.dificilRadio = dificilRadio;
 	}
-	
-
 }

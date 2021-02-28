@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="puntuaciones" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4eedbb89-b4f6-4469-9ab6-f642a1688cf7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
 	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
 	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true"/>
@@ -59,6 +60,15 @@
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
+	<field name="tiempo" class="java.lang.String">
+		<fieldDescription><![CDATA[tiempo]]></fieldDescription>
+	</field>
+	<field name="aciertos" class="java.lang.Integer">
+		<fieldDescription><![CDATA[aciertos]]></fieldDescription>
+	</field>
+	<field name="fallos" class="java.lang.Integer">
+		<fieldDescription><![CDATA[fallos]]></fieldDescription>
+	</field>
 	<title>
 		<band height="285" splitType="Stretch">
 			<line>
@@ -122,6 +132,21 @@
 				</textElement>
 				<text><![CDATA[Tiempo]]></text>
 			</staticText>
+			<textField>
+				<reportElement x="0" y="120" width="180" height="30" uuid="f92c0d4a-b3bf-4134-ac55-58e1b58c4d6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{aciertos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="120" width="200" height="30" uuid="120f477a-101d-408b-b387-fb85e6b0df69"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fallos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="120" width="176" height="30" uuid="c04effe6-4e91-46cf-a49c-3f567e51aba5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tiempo}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<columnHeader>

@@ -9,10 +9,11 @@ public class Puntuacion {
 	public Puntuacion() {
 	}
 
-	public Puntuacion(int aciertos, int fallos) {
+	public Puntuacion(int aciertos, int fallos, String tiempo) {
 		super();
 		this.aciertos = aciertos;
 		this.fallos = fallos;
+		this.tiempo = tiempo;
 	}
 
 	public int getAciertos() {
