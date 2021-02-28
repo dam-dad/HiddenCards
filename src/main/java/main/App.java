@@ -30,7 +30,7 @@ public class App extends Application  {
 		if (controller.getFacilRadio().isSelected()) {
 			try {
 				Stage primaryStage = new Stage();
-				FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/CardsFacilView.fxml"));
+				FXMLLoader loader = new FXMLLoader(getClass().getResource("/files/MemoryMain.fxml"));
 				loader.setController(this);
 				loader.load();
 				Scene scene = new Scene(loader.getRoot());

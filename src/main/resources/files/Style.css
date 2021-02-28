@@ -1,0 +1,9 @@
+.root {
+    /*-fx-background-color: cyan;*/
+    /*-fx-cursor: v_resize 100px;*/
+}
+
+.button {
+    -fx-border-radius: 10;
+    -fx-border-color: black;
+}
