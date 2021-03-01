@@ -22,16 +22,20 @@ Eliges la dificultad y le das a jugar
 
 - Difícil: Tienes 30 segundos para completar el juego
 
+
+
 **Pantallas **
 
+
+
 ```git
-![ScreenShot](https://github.com/dam-dad/HiddenCards/blob/master/readme/Vacio.png)
+![ScreenShot](readme/Vacio.png)
 ```
 
 Primera pantalla del juego, en esta pantalla están las cartas "boca abajo"  y al hacer clic se  revelan 
 
 ```git
-![ScreenShot](https://github.com/dam-dad/HiddenCards/blob/master/readme/Vacio.png)
+![ScreenShot](/readme/Vacio.png)
 ```
 
 Una vez descubiertas todas las parejas se desbloquea el botón "Finalizar"  y se para el crono
