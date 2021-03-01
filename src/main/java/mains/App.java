@@ -30,6 +30,7 @@ public class App extends Application {
 
 		primaryStage.setTitle("Hidden Cards");
 		primaryStage.setScene(scene);
+		primaryStage.getIcons().add(new Image("/imagenes/iconPrincipal.png"));
 		primaryStage.show();
 
 		controller.getJugarButton().setOnAction(e -> onjugarButton(e));
@@ -49,7 +50,7 @@ public class App extends Application {
 				Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
 				Parent root = FXMLLoader.load(getClass().getResource("/fxml/MemoryMain.fxml"));
-				primaryStage.setTitle("Memory");
+				primaryStage.setTitle("HiddenCards");
 				primaryStage.setScene(new Scene(root, 600, 490));
 				primaryStage.setResizable(false);
 				primaryStage.centerOnScreen();
@@ -75,11 +76,11 @@ public class App extends Application {
 				Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
 				Parent root = FXMLLoader.load(getClass().getResource("/fxml/MemoryMain2.fxml"));
-				primaryStage.setTitle("Memory");
+				primaryStage.setTitle("HiddenCards");
 				primaryStage.setScene(new Scene(root, 600, 490));
 				primaryStage.setResizable(false);
 				primaryStage.centerOnScreen();
-				primaryStage.getIcons().add(new Image("/imagenes/icon.png"));
+				primaryStage.getIcons().add(new Image("/imagenes/iconMedio.png"));
 				primaryStage.setOnCloseRequest(e2 -> {
 					Platform.exit();
 					try {
@@ -101,11 +102,11 @@ public class App extends Application {
 				Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
 				Parent root = FXMLLoader.load(getClass().getResource("/fxml/MemoryMain3.fxml"));
-				primaryStage.setTitle("Memory");
+				primaryStage.setTitle("HiddenCards");
 				primaryStage.setScene(new Scene(root, 600, 490));
 				primaryStage.setResizable(false);
 				primaryStage.centerOnScreen();
-				primaryStage.getIcons().add(new Image("/imagenes/icon.png"));
+				primaryStage.getIcons().add(new Image("/imagenes/iconDificil.png"));
 				primaryStage.setOnCloseRequest(e2 -> {
 					Platform.exit();
 					try {

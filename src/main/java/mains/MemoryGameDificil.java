@@ -55,7 +55,7 @@ public class MemoryGameDificil {
 	private static int wrong = 0;
 	private int correct = 0;
 
-	private static Pix pix;
+	private static PixDificil pix;
 
 	public MemoryGameDificil() {
 
@@ -110,12 +110,12 @@ public class MemoryGameDificil {
 			tLabel.setText(String.format("%d:%02d", mins, secs));
 		});
 		timeline.start();
-		pix = new Pix();
+		pix = new PixDificil();
 		images = pix.getImageViews();
 		Collections.shuffle(images);
 	}
 
-	public static Pix getPix() {
+	public static PixDificil getPix() {
 		return pix;
 	}
 

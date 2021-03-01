@@ -56,7 +56,7 @@ public class MemoryGameMedio {
 	private static int wrong = 0;
 	private int correct = 0;
 
-	private static Pix pix;
+	private static PixMedio pix;
 
 	public MemoryGameMedio() {
 
@@ -111,12 +111,12 @@ public class MemoryGameMedio {
 			tLabel.setText(String.format("%d:%02d", mins, secs));
 		});
 		timeline.start();
-		pix = new Pix();
+		pix = new PixMedio();
 		images = pix.getImageViews();
 		Collections.shuffle(images);
 	}
 
-	public static Pix getPix() {
+	public static PixMedio getPix() {
 		return pix;
 	}
 
