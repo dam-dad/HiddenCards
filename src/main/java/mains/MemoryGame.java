@@ -78,7 +78,34 @@ public class MemoryGame {
 				mins++;
 			}
 
-		
+			if (mins == 3) {
+
+				timeline.stop();
+
+				finishButt.setVisible(true);
+
+				finishButt.setDisable(false);
+
+				zeroZero.setDisable(true);
+				oneZero.setDisable(true);
+				twoZero.setDisable(true);
+				threeZero.setDisable(true);
+				zeroOne.setDisable(true);
+				oneOne.setDisable(true);
+				twoOne.setDisable(true);
+				threeOne.setDisable(true);
+				zeroTwo.setDisable(true);
+				oneTwo.setDisable(true);
+				twoTwo.setDisable(true);
+				threeTwo.setDisable(true);
+				zeroThree.setDisable(true);
+				oneThree.setDisable(true);
+				twoThree.setDisable(true);
+				threeThree.setDisable(true);
+
+				JOptionPane.showMessageDialog(null, "Se Acabo el tiempo");
+
+			}
 
 			tLabel.setText(String.format("%d:%02d", mins, secs));
 		});
