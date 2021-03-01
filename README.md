@@ -9,7 +9,7 @@ Es un juego sencillo en el que solamente haciendo clic en una carta se da la vue
 **Juego**
 
 ```git
-![alt text](https://github.com/dam-dad/HiddenCards/blob/master/readme/Inicio.png)
+![ScreenShot](https://github.com/dam-dad/HiddenCards/blob/master/readme/Inicio.png)
 ```
 
 Eliges la dificultad y le das a jugar
@@ -25,19 +25,19 @@ Eliges la dificultad y le das a jugar
 **Pantallas **
 
 ```git
-![alt text](https://github.com/dam-dad/HiddenCards/blob/master/readme/Vacio.png)
+![ScreenShot](https://github.com/dam-dad/HiddenCards/blob/master/readme/Vacio.png)
 ```
 
 Primera pantalla del juego, en esta pantalla están las cartas "boca abajo"  y al hacer clic se  revelan 
 
 ```git
-![alt text](https://github.com/dam-dad/HiddenCards/blob/master/readme/Vacio.png)
+![ScreenShot](https://github.com/dam-dad/HiddenCards/blob/master/readme/Vacio.png)
 ```
 
 Una vez descubiertas todas las parejas se desbloquea el botón "Finalizar"  y se para el crono
 
 ```git
-![alt text](https://github.com/dam-dad/HiddenCards/blob/master/readme/fin.png)
+![ScreenShot](https://github.com/dam-dad/HiddenCards/blob/master/readme/fin.png)
 ```
 
 Una vez acabado el juego te muestra tus puntuaciones 
