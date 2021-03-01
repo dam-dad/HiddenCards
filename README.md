@@ -29,13 +29,13 @@ Eliges la dificultad y le das a jugar
 
 
 ```git
-![ScreenShot](readme/Vacio.png)
+![](readme/Vacio.png)
 ```
 
 Primera pantalla del juego, en esta pantalla están las cartas "boca abajo"  y al hacer clic se  revelan 
 
 ```git
-![ScreenShot](/readme/Vacio.png)
+!(/readme/Vacio.png)
 ```
 
 Una vez descubiertas todas las parejas se desbloquea el botón "Finalizar"  y se para el crono
