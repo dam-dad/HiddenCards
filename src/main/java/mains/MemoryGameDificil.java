@@ -324,7 +324,7 @@ public class MemoryGameDificil {
 		PuntuacionProvider.setPuntuaciones(puntuacion);
 		PuntuacionProvider.generarPdf();
 
-		scene.setRoot(FXMLLoader.load(getClass().getResource("/fxml/Picture.fxml")));
+		scene.setRoot(FXMLLoader.load(getClass().getResource("/fxml/PictureDificil.fxml")));
 	}
 
 	public boolean check(Image i, Image j) {

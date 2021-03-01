@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * Controlador del juego
+ * Controlador del juego dificil
  * 
  * @author Hidden cards
  *
@@ -57,15 +57,12 @@ public class MemoryGame {
 
 	private static Pix pix;
 
-	/**
-	 * inicio y controlador de tiempo
-	 */
 	public MemoryGame() {
 
 		Alert alert = new Alert(Alert.AlertType.INFORMATION);
-		alert.setTitle("Bienvenido al modo fácil!");
+		alert.setTitle("Bienvenido al modo dificil!");
 		alert.setHeaderText(null);
-		alert.setContentText("En esta difucultad tienes 3 min para resolver el panel");
+		alert.setContentText("En esta difucultad tienes 30 segundos para resolver el panel");
 
 		alert.showAndWait();
 
@@ -81,34 +78,7 @@ public class MemoryGame {
 				mins++;
 			}
 
-			if (mins == 3) {
-
-				timeline.stop();
-
-				finishButt.setVisible(true);
-
-				finishButt.setDisable(false);
-
-				zeroZero.setDisable(true);
-				oneZero.setDisable(true);
-				twoZero.setDisable(true);
-				threeZero.setDisable(true);
-				zeroOne.setDisable(true);
-				oneOne.setDisable(true);
-				twoOne.setDisable(true);
-				threeOne.setDisable(true);
-				zeroTwo.setDisable(true);
-				oneTwo.setDisable(true);
-				twoTwo.setDisable(true);
-				threeTwo.setDisable(true);
-				zeroThree.setDisable(true);
-				oneThree.setDisable(true);
-				twoThree.setDisable(true);
-				threeThree.setDisable(true);
-
-				JOptionPane.showMessageDialog(null, "Se Acabo el tiempo");
-
-			}
+		
 
 			tLabel.setText(String.format("%d:%02d", mins, secs));
 		});
@@ -170,11 +140,6 @@ public class MemoryGame {
 	private ArrayList<ImageView> futureCompare = new ArrayList<>();
 	private ArrayList<ImageView> check2 = new ArrayList<>();
 
-	/**
-	 * Clics en las cartas
-	 * 
-	 * @param m
-	 */
 	public void reveal(MouseEvent m) {
 
 		if (futureCompare.size() >= 2) {
@@ -319,12 +284,6 @@ public class MemoryGame {
 		}
 	}
 
-	/**
-	 * Boton finalizar
-	 * 
-	 * @throws IOException
-	 * @throws JRException
-	 */
 	public void finish() throws IOException, JRException {
 		timeline.stop();
 		Scene scene = zeroZero.getScene();

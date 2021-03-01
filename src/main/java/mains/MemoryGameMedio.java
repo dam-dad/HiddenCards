@@ -326,7 +326,7 @@ public class MemoryGameMedio {
 		PuntuacionProvider.setPuntuaciones(puntuacion);
 		PuntuacionProvider.generarPdf();
 
-		scene.setRoot(FXMLLoader.load(getClass().getResource("/fxml/Picture.fxml")));
+		scene.setRoot(FXMLLoader.load(getClass().getResource("/fxml/PictureMedio.fxml")));
 	}
 
 	public boolean check(Image i, Image j) {

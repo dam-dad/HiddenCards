@@ -17,7 +17,7 @@ public class Pix {
 	private Image one, one1, two, two1, three, three1, four, four1, five, five1, six, six1, seven, seven1, eight,
 			eight1;
 	int selection;
-	private ArrayList<Image> images, originals;
+	public ArrayList<Image> images, originals;
 
 	public Pix() {
 		String folder = "";

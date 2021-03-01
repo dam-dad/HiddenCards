@@ -10,7 +10,7 @@ import javafx.stage.Stage;
  * @author Hidden cards
  *
  */
-public class Picture {
+public class PictureMedio {
 
 	public ImageView zeroZero1;
 	public ImageView oneZero1;
@@ -24,17 +24,19 @@ public class Picture {
 	public Label incorrectMatches;
 
 	public void initialize() {
-		timeTaken.setText(MemoryGame.getTime());
-		zeroZero1.setImage(MemoryGame.getPix().getOriginals().get(0));
-		oneZero1.setImage(MemoryGame.getPix().getOriginals().get(2));
-		twoZero1.setImage(MemoryGame.getPix().getOriginals().get(4));
-		threeZero1.setImage(MemoryGame.getPix().getOriginals().get(6));
-		zeroOne1.setImage(MemoryGame.getPix().getOriginals().get(8));
-		oneOne1.setImage(MemoryGame.getPix().getOriginals().get(10));
-		twoOne1.setImage(MemoryGame.getPix().getOriginals().get(12));
-		threeOne1.setImage(MemoryGame.getPix().getOriginals().get(14));
-		timeTaken.setText(MemoryGame.getTime());
-		incorrectMatches.setText(Integer.toString(MemoryGame.getWrong()));
+		
+		
+		timeTaken.setText(MemoryGameMedio.getTime());
+		zeroZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(0));
+		oneZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(2));
+		twoZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(4));
+		threeZero1.setImage(MemoryGameMedio.getPix().getOriginals().get(6));
+		zeroOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(8));
+		oneOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(10));
+		twoOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(12));
+		threeOne1.setImage(MemoryGameMedio.getPix().getOriginals().get(14));
+		timeTaken.setText(MemoryGameMedio.getTime());
+		incorrectMatches.setText(Integer.toString(MemoryGameMedio.getWrong()));
 		
 	
 		
