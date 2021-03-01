@@ -62,7 +62,7 @@ public class MemoryGame {
 		Alert alert = new Alert(Alert.AlertType.INFORMATION);
 		alert.setTitle("Bienvenido al modo dificil!");
 		alert.setHeaderText(null);
-		alert.setContentText("En esta difucultad tienes 30 segundos para resolver el panel");
+		alert.setContentText("En esta difucultad tienes 3 minutos para resolver el panel");
 
 		alert.showAndWait();
 
