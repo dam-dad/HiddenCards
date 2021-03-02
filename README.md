@@ -8,9 +8,9 @@ Es un juego sencillo en el que solamente haciendo clic en una carta se da la vue
 
 **Juego**
 
-```git
-![Inicio](https://github.com/dam-dad/HiddenCards/blob/master/readme/Inicio.png)
-```
+
+![Inicio](readme/Inicio.png)
+
 
 Eliges la dificultad y le das a jugar
 
