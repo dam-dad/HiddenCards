@@ -28,20 +28,18 @@ Eliges la dificultad y le das a jugar
 
 
 
-```git
-![Vacio](https://github.com/dam-dad/HiddenCards/blob/master/readme/Vacio.png)
-```
+
+![Vacio](readme/Vacio.png)
 
 Primera pantalla del juego, en esta pantalla están las cartas "boca abajo"  y al hacer clic se  revelan 
 
-```git
-![lleno](https://github.com/dam-dad/HiddenCards/blob/master/readme/lleno.png)
-```
+
+![lleno](readme/lleno.png)
+
 
 Una vez descubiertas todas las parejas se desbloquea el botón "Finalizar"  y se para el crono
 
-```git
-![fin](https://github.com/dam-dad/HiddenCards/blob/master/readme/fin.png)
-```
+![fin](readme/fin.png)
+
 
 Una vez acabado el juego te muestra tus puntuaciones 
